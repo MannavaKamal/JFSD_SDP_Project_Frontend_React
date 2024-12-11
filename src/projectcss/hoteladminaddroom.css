@@ -1,0 +1,175 @@
+/* SignupForm.css */
+
+/* General Styles */
+
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #00b4d8;
+  }
+  
+  .navbar .login-btn {
+    padding: 0.5rem 1rem;
+    background: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .navbar .login-btn:hover {
+    background: #0077b6;
+  }
+  
+  /* Form Wrapper */
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align form to the top instead of center */
+    height: 100vh; /* You can adjust this if necessary */
+    margin-top: 60px; /* Adjust margin as needed */
+    padding: 2rem; /* Ensure there is padding for smaller screens */
+}
+  
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically for simplicity */
+    width: 90%; /* Make it responsive by using percentages */
+    max-width: 400px; /* Limit maximum width for smaller size */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem 1.5rem; /* Add padding for better spacing */
+}
+
+/* Right Section */
+.right-section {
+    padding: 1rem; /* Adjust padding to decrease the box size */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Heading */
+.right-section h2 {
+    margin-bottom: 1rem; /* Reduce bottom margin */
+    color: #0077b6;
+    font-size: 1.5rem; /* Reduce font size for smaller box */
+    text-align: center; /* Center align the text */
+}
+.right-section h5 {
+    margin-bottom: 1rem; /* Reduce bottom margin */
+    color: #0077b6;
+    font-size: 1.0rem; /* Reduce font size for smaller box */
+    text-align: center; /* Center align the text */
+}
+
+/* Form */
+.right-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; /* Slightly decrease the gap between elements */
+}
+
+/* Input Fields */
+.right-section form input {
+    padding: 0.6rem; /* Reduce padding */
+    font-size: 0.9rem; /* Reduce font size */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.right-section form select {
+    padding: 0.6rem; /* Reduce padding */
+    font-size: 0.9rem; /* Reduce font size */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.right-section form button {
+    padding: 0.6rem; /* Reduce padding */
+    font-size: 0.9rem; /* Reduce font size */
+    background: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-section form button:hover {
+    background: #0077b6;
+}
+
+/* Signup Link */
+.signup-link {
+    text-align: center;
+    margin-top: 0.8rem; /* Adjust margin for smaller size */
+    font-size: 0.85rem; /* Reduce font size */
+}
+
+.signup-link a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        width: 100%; /* Make it fill the screen width */
+        max-width: 350px; /* Further reduce size on smaller screens */
+    }
+
+    .right-section h2 {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
+
+    .right-section form input {
+        font-size: 0.85rem; /* Smaller input font size */
+    }
+
+    .right-section form button {
+        font-size: 0.85rem; /* Smaller button font size */
+    }
+
+    .signup-link {
+        font-size: 0.8rem; /* Smaller text size for the signup link */
+    }
+}
+  

@@ -1,0 +1,52 @@
+.navbar-container {
+    padding-top: 20%;
+    position: fixed;
+    top: 20;
+    left: 0;
+    width: 50%;
+    height: 300px;
+    z-index: 999;
+  }
+  
+  .navbar-toggle {
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle-icon {
+    font-size: 24px;
+  }
+  
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-top: 50%;
+  }
+  
+  .navbar.open {
+    display: block;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin-bottom: 10px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+  }

@@ -1,0 +1,88 @@
+.navbar {  
+  position: fixed; /* Fixes the navbar to the top */
+  top: 0; /* Aligns the navbar to the top of the viewport */
+  left: 0;
+  width: 100%; /* Makes the navbar span the full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f6e1c3; /* Light beige background color */
+  z-index: 1000; /* Ensures it appears above other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+}
+  
+  .brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8c5b3f;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+    color: #8c5b3f;
+  }
+  
+  .search-bar {
+    border: 1px solid #8c5b3f;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    background: linear-gradient(to bottom, #fbd9c6, #f8b88b); /* Gradient background */
+    position: relative;
+    color: #8c5b3f; /* Text color matching the theme */
+    text-align: center;
+    margin-top: 70px; /* Adjust this value to match the navbar's height */
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .join-now {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background-color: #e66a4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .join-now:hover {
+    background-color: #d4543c;
+  }
+    

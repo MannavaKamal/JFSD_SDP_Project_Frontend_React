@@ -1,0 +1,91 @@
+/* Container Styling */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-container {
+  height: 100vh;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 100vw;
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+/* Card Styling */
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  width: 350px;
+  padding: 40px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Field Styling */
+.custom-input {
+  height: 45px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.custom-input:focus {
+  border-color: #667eea;
+  box-shadow: 0px 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+/* Button Styling */
+.btn-gradient {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  height: 45px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  box-shadow: 0px 6px 12px rgba(118, 75, 162, 0.5);
+}
+
+/* Link Styling */
+a {
+  color: #764ba2;
+  font-size: 14px;
+}
+
+a:hover {
+  color: #667eea;
+}
+/* pop up box */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
