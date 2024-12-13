@@ -314,7 +314,7 @@ const [data,setData] = useState([])
   const fetchData =  async () => {
     try{
       setDisplayvalue(3)
-      const response = await axios.get(`h${config.url}/paymentdetails`)
+      const response = await axios.get(`${config.url}/paymentdetails`)
       const response1 = await axios.get(`${config.url}/checkusersession1`);
 if(response.data === ""){
   navigate('/login')
