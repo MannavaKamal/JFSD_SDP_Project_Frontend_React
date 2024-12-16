@@ -368,6 +368,7 @@ document.body.removeChild(scriptTag)
 }, []);
 
 const handlePay = async () => {
+   setBoxValue(0)
 const response =  await axios.post(`${config.url}/pay`,{
 requestid:Requestid,
 amount:Amount*100,
