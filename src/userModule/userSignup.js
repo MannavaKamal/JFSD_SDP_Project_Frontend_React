@@ -59,11 +59,11 @@ useEffect(()=>{
           return
         }
        if(!(User.password.length  >= 8)){
-        alert("passoword should be greater than 8 chars")        
+        alert("Password must be longer than 8 characters")        
         return
        }
        if( ! /^[9876]\d{9}$/.test(User.contact)){
-        alert("you contact should start with 9/8/7/6 and not greate than 10 10 digits")        
+        alert("Your contact number should start with 9, 8, 7, or 6 and must be exactly 10 digits long")        
         return
        }      
        if(Return === 1){
