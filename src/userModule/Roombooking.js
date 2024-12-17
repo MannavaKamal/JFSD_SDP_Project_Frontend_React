@@ -340,7 +340,7 @@ if(response.data === ""){
   navigate('/login')
 }else if(response.data.length  === 0) {
   setUser(response1.data)
-  setMessage("no travel requests till date");
+  setMessage("It is impossible to book a room without a travel plan");
   setDisplayValue(1)       
 }else{     
   setUser(response1.data)
@@ -1238,6 +1238,7 @@ sx={{
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12}>
+          <label>checkin date</label>
           <input
             type="date"
             placeholder="Select Date"
@@ -1254,6 +1255,7 @@ sx={{
           />
         </Grid>
         <Grid item xs={12}>
+        <label>checkin time</label>
           <input
             type="time"
             placeholder="Check-in Time"
@@ -1281,7 +1283,7 @@ sx={{
             }}
           >
             <option value="" disabled selected>
-              Select Hours
+              Select hours of stay
             </option>
             {hours.map((hour, index) => (
               <option key={index} value={hour}>
