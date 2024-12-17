@@ -73,7 +73,7 @@ useEffect(()=>{
             return
          }
          fetchData()
-         setDisplayvalue(1) 
+         
     }catch(error){
         setMessage(error.message)
       setDisplayvalue(3)
